@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
 ul li{
     display: inline-block;
     float: left;
@@ -12,5 +18,21 @@ ul li{
 ul{
     width: 80%;
     margin: auto;
-    background-color: aquamarine;
+    background-color: rgb(241, 188, 239);
 }
+
+article.figcapture{
+    display: inline-block;
+    background: #eee;
+    float: left;
+    width: 35%;
+    margin-right: 5%;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+section.section{
+ margin: auto;
+ width: 100%;
+}
+
