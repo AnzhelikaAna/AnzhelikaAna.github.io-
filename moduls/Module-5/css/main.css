@@ -1,0 +1,241 @@
+
+.parent {
+    position: relative;
+height: 422px;
+width: 997px;
+margin: auto;
+background-color: rgb(255, 255, 255);
+color: rgb(207, 172, 32);
+z-index: 10;
+}
+
+.child {
+    margin: auto;
+position: absolute;
+top: 85px;
+left: 100px;
+right: 500px;
+height: 442px;
+width: 997px;
+opacity: 0.9; /* Значение прозрачности */
+filter: alpha(Opacity=70);
+}
+
+.name{
+text-align: center;
+margin: auto;
+display: inline-block;
+  padding: 0 -40px;
+  font-size: 37px;
+  color: #dfc13e;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pp{
+  display: inline-block;
+  margin: auto;
+text-align: center;
+padding: 0 -70px;
+font-size: 32px;
+color: #dfc13e;
+font-weight: 500;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.arrow-6 {
+  margin:20px;
+}
+.arrow-6 svg {
+  width: 100px;
+  height: auto;
+  margin: 0 3rem;
+  cursor: pointer;
+  overflow: visible;
+}
+.arrow-6 svg polygon, 
+.arrow-6 svg path {
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+  fill: #cf8670;
+}
+.arrow-6 svg:hover polygon, 
+.arrow-6 svg:hover path {
+  transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+  fill: rgb(231, 53, 53);
+}
+.arrow-6 svg:hover .arrow-6-pl {
+  animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow-6 svg:hover .arrow-6-pl-fixed {
+  animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+
+@keyframes arrow-6-anim {
+  0% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  5% {
+      transform: translateX(-0.1rem);
+  }
+  100% {
+      transform: translateX(1rem);
+      opacity: 0;
+  }
+}
+@keyframes arrow-6-fixed-anim {
+  5% {
+      opacity: 0;
+  }
+  20% {
+      opacity: 0.4;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+h1{
+  padding: 15px 10px;
+  color: rgb(90, 87, 87);
+  text-align: center;
+  
+}
+
+h2{
+    padding: none;
+    margin-bottom: 50px;
+  color: rgb(233, 150, 103);
+  text-align: center;
+  font-size: 32px;
+  }
+
+  /* ........................CARD CONTAINERS................................ */
+  
+  body{
+    counter-reset:count-card 1;
+    }
+    .card{
+    counter-increment: count-card;
+  position: relative;
+  
+    }
+    
+    .card-container{
+    margin: auto;
+    padding-top: 7%;
+    display: block;
+    width: 90%;
+    }
+    .card-container li{
+    display: inline-block;
+    width: 200px;
+    margin: 3.3%;
+    transition: transform .4s; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 20);
+  
+    }
+  
+  
+    .info__screen:hover{
+      opacity: 0.4;
+      } 
+  
+  
+    
+    .card-container li:hover p:nth-child(2){
+    background: rgba(41, 11, 11, 0.575);
+    }
+    .card-container li:hover p:nth-child(3){
+    background: rgba(121, 33, 33, 0.575);
+    }
+    
+    .card-container li:hover{
+      transform: scale(1.1);
+    transform-origin: 50% 50%;
+      }
+  
+     
+    .card-container li:before{
+    color: rgb(255, 0, 0);
+    text-align: center;
+      display: block;
+      width: 24px;
+      position: relative;
+      left: 0px;
+      bottom: 0px;
+      content: counter(count-card, upper-roman);
+      font-size: 10px;
+      background-color: rgb(235, 235, 235);
+      opacity: 0.6;
+    }
+    .card{
+    background-color: rgb(22, 21, 21);
+    
+    }
+    img :not([type="parent"]){
+      object-fit: cover;
+      width: 150px;
+      height: 55vh;
+    margin-bottom: 0;
+    float: left;
+    }
+    
+    /* ..........................CARDS......................... */
+    
+    .card p{
+    margin: 0px;
+    display: inline-block;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    float: left;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    }
+    .card p:nth-child(2){
+    background-color: rgb(34, 30, 30);
+    width: 70%;
+    }
+    .card p:nth-child(3){
+    background-color: rgb(156, 156, 156);
+    width: 30%;
+    }
+  
+    .info__screen{
+      display: block;
+      padding: 1%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.781);
+      width: 100%;
+      height: 45vh;
+      z-index: 100;
+      transform: translate(-50%, 0%);
+      top: 0%;
+      left: 50%;
+      content: "";
+      opacity: 0;
+      transition: opacity .5s ease-out;
+    };
+    
+    
+    /* .card-container li:after{
+      color: rgb(255, 0, 0);
+      text-align: center;
+        display: block;
+        width: 24px;
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+        content: counter(count-card, upper-roman);
+        font-size: 12px;
+        background-color: rgb(235, 235, 235);
+        opacity: 0.6;
+      } */
+  
