@@ -104,11 +104,22 @@ h1{
   text-align: center;
 }
 
+.content{
+  position: relative;
+  width: 100%;
+
+}
+
 .content ::after {
   display: block;
+  position: absolute;
   content: '';
   width: 9rem;
   height: 0.1875rem;
+  left: 39%;
+  top: 95%;
+  transform: translate(50%,50%);
+  
   background-color: #cc2e2e;
   margin: 0.325rem auto 0;
 }
