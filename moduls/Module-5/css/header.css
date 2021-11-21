@@ -1,11 +1,3 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-  }
-
   .site-navigation li:nth-child(1) a{
     color: rgb(197, 64, 98);
     font-weight: 100%;
