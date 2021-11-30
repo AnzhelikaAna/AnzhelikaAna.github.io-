@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 70%;
+    margin: auto;
+    padding: 3.125rem 0;
+}
+
+
+.header {
+    margin-bottom: 4.8rem;
+}
+
+.header, .list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.nazva {
+        flex-grow: 2;
+        font-size: 1.875rem;
+        align-items: center;
+        color: #da6464;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        border-bottom: 0.0625rem transparent;
+        text-transform: uppercase;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.nazva::after {
+    opacity: 0;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 11rem;
+    height: 0.1875rem;
+    background-color: #c03131;
+    margin: 0.325rem auto 0;
+
+}
+
+    .list {
+        flex-grow: 1;
+        align-self: center;
+        font-size: 0.875rem;
+        font-weight: 700;
+        padding: 0.625rem 0;
+        color: #95e1d3;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        border-bottom: 0.1875rem solid transparent;
+        cursor: pointer;
+    }
+
+    .header, .list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+ 
+   
+    .site-navigation {
+        margin: auto;
+        font-family: Roboto, sans-serif;
+        
+      }
+      
+      .site-navigation li {
+        float: left;
+      }
+      .site-navigation a {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 20px;
+        color: #4dece4;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .site-navigation a:hover {
+        color: #e26969;
+        text-decoration: underline;
+       
+        
+      }
+      .site-navigation a:focus {
+        color: #ff4040;
+      }
+      .clearfix {
+        display: table;
+        content: "";
+        clear: both;
+        float: right;
+        padding: -20px 3px 30px 5px;
+      }
