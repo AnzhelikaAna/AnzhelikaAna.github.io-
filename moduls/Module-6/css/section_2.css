@@ -62,7 +62,7 @@
     background-image: linear-gradient(to top, rgba(233, 153, 153, 0.9), rgba(77, 230, 210, 0.9));
     display: flex;
     width: 300px;
-    top: 929px;
+    top: 930px;
     left: auto;
     height: 353px;
     opacity: 0;
@@ -88,8 +88,7 @@
 transition: 1s;
 display: block;
     flex-basis: 18%;
-    background-color: #8fd9e5bb;
-    padding: 4%;
+    padding: 7%;
     cursor: pointer;
 }
 
@@ -102,44 +101,46 @@ display: block;
     background-size: cover;
 }
 
+
 .item-wrapper:hover {
     background-color: rgb(245, 160, 245);
 }
 
 .face{
-    background-image: url(../img/face.jpg);
+    background-image: url(../img/face.gif);
 }
+
 .twit{
-    background-image: url(../img/twit.png);
+    background-image: url(../img/twit.gif);
 }
 
 .pint{
-    background-image: url(../img/pint.png);
+    background-image: url(../img/pint.gif);
 }
 
 .insta{
-    background-image: url(../img/insta.png);
+    background-image: url(../img/insta.gif);
 }
 
-.icon-block_one {
+.oneth {
     position:absolute;
     top:0px;
     right:0px
 }
 
-.icon-block_two {
+.twoth {
     position:absolute;
     top:0px;
     left:0px;
 }
 
-.icon-block_tree {
+.treeth {
     position:absolute;
     top: 320px;
     right:0px
 }
 
-.icon-block_four {
+.fourth {
     position:absolute;
     top:320px;
     left:0px;
