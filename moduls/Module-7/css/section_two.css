@@ -1,0 +1,233 @@
+.section_two {
+        width: 100%;
+        margin-bottom: 4.8rem;
+        text-align: center;
+    }
+    
+    section {
+        display: block;
+        }
+
+        .wrappp{
+            background-image: url(../img/fon.jpg);
+            height: 700px;
+            width: 1000px;
+            margin: auto;
+            position: relative;
+        }
+
+        .lores, .contact {
+            display: block;
+            border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        }
+        
+        .lores{
+            font-size: 1.2rem;
+            color: rgb(255, 255, 255);
+            font-family: 'Brush Script MT', cursive 'Brush Script Std';
+            font-style: oblique;
+            font-weight: 400; 
+            top: 20%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+        }
+
+        .contact {
+            font-size: 1.875rem;
+            color: #ffffff;
+            font-family: 'Kaushan Script';
+            font-style: normal;
+            font-weight: 400;
+            text-transform: uppercase;
+            top: 15%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);       
+    }
+
+    .forms{
+        display: flex;
+        border-radius: 1em;
+    padding: 1em;
+    position: absolute; 
+    top: 50%;
+        left: 30%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); 
+        flex-direction:	column;
+    }
+
+    .forms, input {
+        font-size: 20px;
+        font-family: 'Kaushan Script';
+      }
+
+      .areaa{
+        font-family: 'Kaushan Script';
+      }
+
+      
+
+      input { 
+        display: inline-block;
+        width: 444px;
+        height: 30px;
+        margin: 7px auto;
+        line-height: 30px;
+        padding: 20px;
+        border-radius: 5px;
+        text-indent: 6px;
+      }
+
+      .formax{
+        display: flex;
+        border-radius: 1em;
+    padding: 1em;
+    position: absolute; 
+    top: 50%;
+        left: 70%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); 
+      }
+
+      .butt{
+        display: flex;
+    position: absolute; 
+    top: 120%;
+        left: 30%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); 
+      }
+
+      
+      input[type="submit"] {
+        display: block;
+        height: 54px;
+        width: 200px;
+        margin: 10px auto;
+        padding: 0 10px;
+        background-color: rgb(245, 188, 30);
+        box-shadow: var(--black-alfa2);
+        color: #eee;
+        float: left;
+      }
+
+      input[type="submit"]:hover {
+        box-shadow: var(--black-alfa1);
+        background-color: darkgreen;
+        cursor: pointer; 
+      }
+      
+
+      .erorr_name{
+        display: none;
+        color: rgb(255, 208, 0);
+        font-weight: 700;
+        font-size: 12px;
+        position: absolute;
+        transform: translate(50%, 310%);
+        top: 27;
+        left: -3%;
+    }
+    
+    .error_email{
+        display: none;
+        color: rgb(255, 208, 0);
+        font-weight: 700;
+        font-size: 12px;
+        position: absolute;
+        transform: translate(50%, 50%);
+        top: 56%;
+        left: -3%;
+    }
+    
+    
+    .error_subject{
+        display: none;
+        color: rgb(255, 208, 0);
+        font-weight: 700;
+        font-size: 12px;
+        position: absolute;
+        transform: translate(50%, 50%);
+        top: 83%;
+        left: -3.5%;
+    }
+    
+    .error_massege{
+        display: none;
+        color: rgb(255, 208, 0);
+        font-weight: 700;
+        font-size: 12px;
+        position: absolute;
+        transform: translate(50%, 50%);
+        top: 60%;
+        left: 48%;
+    }
+    
+    input[name="email"]:focus, input[name="name"]:focus, input[name="subject"]:focus{
+      outline: none;
+    }
+  
+    textarea[name="text"]:focus{
+      outline: none;
+      border: 2px solid rgb(219, 101, 101);
+    }
+    textarea[name="text"]:focus ~ .error_massege {
+      display: block; 
+    }
+
+
+  input[name="name"]:not(:focus):not(:placeholder-shown):invalid{
+      border: 2px solid rgb(247, 127, 127);
+  }
+  
+  input[name="email"]:not(:focus):not(:placeholder-shown):invalid {
+      border: 2px solid rgb(216, 127, 127);
+  }
+  
+  input[name="subject"]:not(:focus):not(:placeholder-shown):invalid {
+      border: 2px solid rgb(216, 116, 116);
+  }
+  
+  textarea[name="text"]:not(:focus):not(:placeholder-shown):invalid {
+      border: 2px solid rgb(216, 116, 116);
+  }
+  
+  
+  input[name="name"]:not(:focus):not(:placeholder-shown):invalid ~ .erorr_name {
+      display: block; 
+    }
+  
+    input[name="email"]:not(:focus):not(:placeholder-shown):invalid ~ .error_email {
+      display: block; 
+    }
+  
+    input[name="subject"]:not(:focus):not(:placeholder-shown):invalid ~ .error_subject {
+      display: block; 
+    }
+    
+    textarea[name="text"]:not(:focus):invalid ~ .error_massege{
+      display: block; 
+    }
+  
+
+    input[name="name"]:not(:focus):not(:placeholder-shown):valid {
+      border-color: rgb(0, 101, 252);
+    }
+  
+  
+    input[name="email"]:not(:focus):not(:placeholder-shown):valid {
+      border-color: rgb(0, 101, 252);
+    }
+  
+  
+    input[name="subject"]:not(:focus):not(:placeholder-shown):valid {
+      border-color: rgb(0, 101, 252);
+    }
+  
+    textarea[name="text"]:not(:focus):not(:placeholder-shown):valid {
+      border-color: rgb(0, 101, 252);
+    }
