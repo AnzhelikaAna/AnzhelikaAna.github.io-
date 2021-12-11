@@ -1,0 +1,27 @@
+/* chewy-regular - latin */
+@font-face {
+    font-family: 'Chewy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/chewy-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/chewy-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/chewy-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/chewy-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/chewy-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/chewy-v12-latin-regular.svg#Chewy') format('svg'); /* Legacy iOS */
+  }
+
+  /* julee-regular - latin */
+@font-face {
+    font-family: 'Julee';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/julee-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/julee-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/julee-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/julee-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/julee-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/julee-v12-latin-regular.svg#Julee') format('svg'); /* Legacy iOS */
+  }
